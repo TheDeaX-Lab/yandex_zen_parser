@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e11aeed8-fe74-498f-a679-ffa08966b2ee" name="Default Changelist" comment="" />
+    <list default="true" id="e11aeed8-fe74-498f-a679-ffa08966b2ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ConsoleApp1/Person.cs" root0="FORCE_HIGHLIGHTING" />
@@ -21,6 +31,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1VHqsFdxutI4WJTajoxqhi9Eoku" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -79,7 +90,9 @@
       <option name="presentableId" value="Default" />
       <updated>1576920573006</updated>
       <workItem from="1576920574269" duration="11025000" />
-      <workItem from="1576937515288" duration="3341000" />
+      <workItem from="1576937515288" duration="3505000" />
+      <workItem from="1576942335013" duration="28000" />
+      <workItem from="1576942585079" duration="1232000" />
     </task>
     <servers />
   </component>
@@ -89,22 +102,22 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="WindowStateProjectService">
-    <state width="1916" height="138" key="GridCell.Tab.0.bottom" timestamp="1576939971848">
+    <state width="1870" height="284" key="GridCell.Tab.0.bottom" timestamp="1576943816785">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1916" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576939971848" />
-    <state width="1916" height="138" key="GridCell.Tab.0.center" timestamp="1576939971847">
+    <state width="1870" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576943816785" />
+    <state width="1870" height="284" key="GridCell.Tab.0.center" timestamp="1576943816784">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1916" height="138" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576939971847" />
-    <state width="1916" height="138" key="GridCell.Tab.0.left" timestamp="1576939971847">
+    <state width="1870" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576943816784" />
+    <state width="1870" height="284" key="GridCell.Tab.0.left" timestamp="1576943816784">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1916" height="138" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576939971847" />
-    <state width="1916" height="138" key="GridCell.Tab.0.right" timestamp="1576939971848">
+    <state width="1870" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576943816784" />
+    <state width="1870" height="284" key="GridCell.Tab.0.right" timestamp="1576943816784">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1916" height="138" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576939971848" />
+    <state width="1870" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576943816784" />
     <state x="553" y="247" width="804" height="520" key="Rider.ProjectTemplateDialog.Size" timestamp="1576920573120">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -113,5 +126,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="611" y="131" width="687" height="753" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576926163776" />
+    <state x="623" y="234" width="672" height="678" key="search.everywhere.popup" timestamp="1576943516454">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="234" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1576943516454" />
   </component>
 </project>

@@ -14,15 +14,16 @@ namespace ConsoleApp1
     {
         private static HtmlWeb loader = new HtmlWeb();
         private static HttpClient client = new HttpClient();
-        private static UInt64 file_number = 0;
 
         private const String api_channel_id =
             "https://zen.yandex.ru/api/v3/launcher/export?_csrf=9831a76537b43259db7d8b0de06c7107291b4808-1572698342685&clid=300&country_code=ru&token=&channel_id={0}";
 
         private const String api_channel_name =
             "https://zen.yandex.ru/api/v3/launcher/export?_csrf=9831a76537b43259db7d8b0de06c7107291b4808-1572698342685&clid=300&country_code=ru&token=&channel_name={0}";
-        private static UInt16 pages = 100;
+        private static UInt16 pages = 1000;
+        private static UInt16 pull_pages = 50;
         private static UInt16 totalChannels = 0;
+        private static DateTime start = DateTime.Now;
         static async Task ParsePage(HtmlDocument doc)
         {
             var tasks = new List<Task>();
@@ -33,7 +34,7 @@ namespace ConsoleApp1
             }
             await Task.WhenAll(tasks);
         }
-        
+
         static async Task LoadChannel(String channelName)
         {
             totalChannels++;
@@ -45,9 +46,8 @@ namespace ConsoleApp1
             }
             else
             {
-                urlToChannel = String.Format(api_channel_name, channelName);
+                urlToChannel = String.Format(api_channel_name, channelName.Substring(1));
             }
-
             try
             {
                 var request = await client.GetAsync(urlToChannel);
@@ -62,7 +62,7 @@ namespace ConsoleApp1
                         String similar, pixels;
                         similar = article.similar.ToString();
                         pixels = article.pixels.ToString();
-                        if (similar != "{}" && similar != "" || pixels != "[]" && pixels !="" ) Console.WriteLine("Симиляр: {0}\nПиксели: {1}", article.similar.ToString(), article.pixels.ToString());
+                        if (similar != "{}" && similar != "" || pixels != "[]" && pixels != "") Console.WriteLine("Симиляр: {0}\nПиксели: {1}", article.similar.ToString(), article.pixels.ToString());
                     }
                 }
                 catch
@@ -78,18 +78,26 @@ namespace ConsoleApp1
         }
         static async Task LoadPages()
         {
-            var tasks = new List<Task>();
-            for(var k = 1; k <= pages; k++) {
-                var task = loader.LoadFromWebAsync($"https://zen.yandex.ru/media/zen/channels?page={k}");
-                tasks.Add(Task.Run(() => task
-                    .ContinueWith(async t => await ParsePage(t.Result))
-                    .Unwrap()));
+            for (var i = 0; i < pages / pull_pages; i++)
+            {
+                var tasks = new List<Task>();
+                for (var k = pull_pages*i+1; k <= pull_pages*(i+1); k++)
+                {
+                    var task = loader.LoadFromWebAsync($"https://zen.yandex.ru/media/zen/channels?page={k}");
+                    tasks.Add(Task.Run(() => task
+                        .ContinueWith(async t => await ParsePage(t.Result))
+                        .Unwrap()));
+                }
+
+                await Task.WhenAll(tasks);
+                Console.WriteLine($"{i+1} Партия закончилась: {0} секунд", DateTime.Now - start);
+                start = DateTime.Now;
             }
-            await Task.WhenAll(tasks);
         }
-        
+
         static async Task Main(string[] args)
         {
+            Console.WriteLine("Старт начинаем! {0}", start);
             await LoadPages();
             Console.WriteLine("При {0} страницах было получено {1} каналов", pages, totalChannels);
         }
