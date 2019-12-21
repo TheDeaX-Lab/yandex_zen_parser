@@ -20,8 +20,8 @@ namespace ConsoleApp1
 
         private const String api_channel_name =
             "https://zen.yandex.ru/api/v3/launcher/export?_csrf=9831a76537b43259db7d8b0de06c7107291b4808-1572698342685&clid=300&country_code=ru&token=&channel_name={0}";
-        private static UInt16 pages = 1000;
-        private static UInt16 pull_pages = 50;
+        private static UInt16 pages = 25;
+        private static UInt16 pull_pages = 1;
         private static UInt16 totalChannels = 0;
         private static DateTime start = DateTime.Now;
         static async Task ParsePage(HtmlDocument doc)
@@ -52,24 +52,7 @@ namespace ConsoleApp1
             {
                 var request = await client.GetAsync(urlToChannel);
                 var text = await request.Content.ReadAsStringAsync();
-
-                try
-                {
-                    var person = JsonSerializer.Deserialize<Person>(text);
-
-                    foreach (var article in person.items)
-                    {
-                        String similar, pixels;
-                        similar = article.similar.ToString();
-                        pixels = article.pixels.ToString();
-                        if (similar != "{}" && similar != "" || pixels != "[]" && pixels != "") Console.WriteLine("Симиляр: {0}\nПиксели: {1}", article.similar.ToString(), article.pixels.ToString());
-                    }
-                }
-                catch
-                {
-                    var dict = JsonSerializer.Deserialize<Dictionary<String, JsonElement?>>(text);
-                    if (dict["error"].ToString() != "1") Console.WriteLine("Ошибка!!! {0}", text);
-                }
+                var person = JsonSerializer.Deserialize<Person>(text);
             }
             catch
             {
@@ -90,8 +73,7 @@ namespace ConsoleApp1
                 }
 
                 await Task.WhenAll(tasks);
-                Console.WriteLine($"{i+1} Партия закончилась: {0} секунд", DateTime.Now - start);
-                start = DateTime.Now;
+                Console.WriteLine("{1} Партия закончилась: {0} секунд", DateTime.Now - start, i+1);
             }
         }
 
@@ -99,7 +81,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Старт начинаем! {0}", start);
             await LoadPages();
-            Console.WriteLine("При {0} страницах было получено {1} каналов", pages, totalChannels);
+            Console.WriteLine("При {0} страницах было получено {1} каналов, среднее время на партию: {2}", pages, totalChannels, (DateTime.Now - start).TotalSeconds/pages);
         }
     }
 }
