@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e11aeed8-fe74-498f-a679-ffa08966b2ee" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ConsoleApp1/Person.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConsoleApp1/Program.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ConsoleApp1/Models.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApp1/Person.cs" />
+        <option value="$PROJECT_DIR$/ConsoleApp1/Program.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1VHqsFdxutI4WJTajoxqhi9Eoku" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ConsoleApp1" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/ConsoleApp1/ConsoleApp1.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e11aeed8-fe74-498f-a679-ffa08966b2ee" name="Default Changelist" comment="" />
+      <created>1576920573006</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1576920573006</updated>
+      <workItem from="1576920574269" duration="11025000" />
+      <workItem from="1576937515288" duration="3341000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state width="1916" height="138" key="GridCell.Tab.0.bottom" timestamp="1576939971848">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1916" height="138" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576939971848" />
+    <state width="1916" height="138" key="GridCell.Tab.0.center" timestamp="1576939971847">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1916" height="138" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576939971847" />
+    <state width="1916" height="138" key="GridCell.Tab.0.left" timestamp="1576939971847">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1916" height="138" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576939971847" />
+    <state width="1916" height="138" key="GridCell.Tab.0.right" timestamp="1576939971848">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1916" height="138" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576939971848" />
+    <state x="553" y="247" width="804" height="520" key="Rider.ProjectTemplateDialog.Size" timestamp="1576920573120">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="553" y="247" width="804" height="520" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1576920573120" />
+    <state x="611" y="131" width="687" height="753" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576926163776">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="611" y="131" width="687" height="753" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576926163776" />
+  </component>
+</project>
