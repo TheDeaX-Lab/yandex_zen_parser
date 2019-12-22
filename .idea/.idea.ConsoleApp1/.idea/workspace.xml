@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e11aeed8-fe74-498f-a679-ffa08966b2ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/ConsoleApp1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/ConsoleApp1.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Person.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Debug/netcoreapp3.1/ConsoleApp1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Debug/netcoreapp3.1/ConsoleApp1.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +19,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ConsoleApp1/Person.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ConsoleApp1/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AFD00B3C-27B9-435F-AB5D-5D9D53D333CE/E/Timer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -94,7 +94,9 @@
       <workItem from="1576942335013" duration="28000" />
       <workItem from="1576942585079" duration="1232000" />
       <workItem from="1576948117271" duration="2214000" />
-      <workItem from="1576950620546" duration="232000" />
+      <workItem from="1576950620546" duration="481000" />
+      <workItem from="1576955754775" duration="2354000" />
+      <workItem from="1577031566013" duration="6538000" />
     </task>
     <servers />
   </component>
@@ -104,30 +106,30 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="WindowStateProjectService">
-    <state width="1870" height="284" key="GridCell.Tab.0.bottom" timestamp="1576950857688">
+    <state width="1870" height="165" key="GridCell.Tab.0.bottom" timestamp="1577037896913">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1870" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1576950857688" />
-    <state width="1870" height="284" key="GridCell.Tab.0.center" timestamp="1576950857688">
+    <state width="1870" height="165" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577037896913" />
+    <state width="1870" height="165" key="GridCell.Tab.0.center" timestamp="1577037896912">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1870" height="284" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1576950857688" />
-    <state width="1870" height="284" key="GridCell.Tab.0.left" timestamp="1576950857687">
+    <state width="1870" height="165" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577037896912" />
+    <state width="1870" height="165" key="GridCell.Tab.0.left" timestamp="1577037896912">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1870" height="284" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1576950857687" />
-    <state width="1870" height="284" key="GridCell.Tab.0.right" timestamp="1576950857688">
+    <state width="1870" height="165" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577037896912" />
+    <state width="1870" height="165" key="GridCell.Tab.0.right" timestamp="1577037896913">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1870" height="284" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1576950857688" />
+    <state width="1870" height="165" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577037896913" />
     <state x="553" y="247" width="804" height="520" key="Rider.ProjectTemplateDialog.Size" timestamp="1576920573120">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="553" y="247" width="804" height="520" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1080@0.0.1920.1080" timestamp="1576920573120" />
-    <state x="611" y="131" width="687" height="753" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576926163776">
+    <state x="452" y="172" width="687" height="753" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577033530826">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="611" y="131" width="687" height="753" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1576926163776" />
+    <state x="452" y="172" width="687" height="753" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1577033530826" />
     <state x="623" y="234" width="672" height="678" key="search.everywhere.popup" timestamp="1576943516454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
