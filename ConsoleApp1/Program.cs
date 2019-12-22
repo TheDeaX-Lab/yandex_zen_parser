@@ -1,11 +1,8 @@
 ﻿#nullable enable
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Threading.Tasks;
 using System.Net.Http;
-using System.Text;
-using System.Text.Json;
 using HtmlAgilityPack;
 
 
@@ -13,85 +10,83 @@ namespace ConsoleApp1
 {
     class Program
     {
-        private static HtmlWeb loader = new HtmlWeb();
-        private static HttpClient client = new HttpClient();
-        private static List<String> list_of_channels = new List<String>();
+        private static readonly HtmlWeb Loader = new HtmlWeb();
+        private static readonly HttpClient Client = new HttpClient();
+        private static readonly Stack<String> ListOfChannels = new Stack<string>();
 
-        private const String api_channel_id =
+        private const String ApiChannelId =
             "https://zen.yandex.ru/api/v3/launcher/export?_csrf=9831a76537b43259db7d8b0de06c7107291b4808-1572698342685&clid=300&country_code=ru&token=&channel_id={0}";
 
-        private const String api_channel_name =
+        private const String ApiChannelName =
             "https://zen.yandex.ru/api/v3/launcher/export?_csrf=9831a76537b43259db7d8b0de06c7107291b4808-1572698342685&clid=300&country_code=ru&token=&channel_name={0}";
 
-        private static UInt16 pages = 100;
+        private const ushort Pages = 10;
+
+        private const ushort PullPages = 5;
+        private const ushort PullChannels = 10;
+
+        private static ushort _totalChannels;
         
-        private static UInt16 pull_pages = 10;
-        private static UInt16 pull_channels = 50;
+        private static ushort _completedPages;
+
+        private static ushort _currentPage = 1;
+
+        private static ushort _pagesWorking;
+        private static ushort _channelsWorking;
         
-        private static UInt16 _totalChannels = 0;
-        
-        private static UInt16 _completedPages = 0;
-        private static UInt16 _completedChannels = 0;
-        
-        private static UInt16 _currentPage = 1;
-        private static UInt16 _currentChannel = 1;
-        
-        private static UInt16 _pagesWorking = 0;
-        private static UInt16 _channelsWorking = 0;
-        
-        private static DateTime start = DateTime.Now;
-        static void ParsePage(HtmlDocument doc)
+        private static readonly DateTime Start = DateTime.Now;
+
+        private static void ParsePage(HtmlDocument doc)
         {
             foreach (var node in doc.DocumentNode.SelectNodes("//a[@class='channel-item__link']"))
             {
-                list_of_channels.Add(node.Attributes["href"].Value);
+                ListOfChannels.Push(node.Attributes["href"].Value);
             }
         }
 
-        static async Task<UInt16> LoadChannel(String channelName)
+        private static async Task<ushort> LoadChannel(String channelName)
         {
             _totalChannels++;
-            var urlToChannel = "";
-            if (channelName.IndexOf("id/", StringComparison.Ordinal) >= 0)
+            string urlToChannel;
+            if (channelName.IndexOf("/id/", StringComparison.Ordinal) >= 0)
             {
                 var channelId = channelName.Replace("/id/", "");
-                urlToChannel = String.Format(api_channel_id, channelId);
+                urlToChannel = string.Format(ApiChannelId, channelId);
             }
             else
             {
-                urlToChannel = String.Format(api_channel_name, channelName.Substring(1));
+                urlToChannel = string.Format(ApiChannelName, channelName.Substring(1));
             }
-            var text = await client.GetStringAsync(urlToChannel);
+            await Client.GetStringAsync(urlToChannel);
             //var person = JsonSerializer.Deserialize<Person>(text); 
             //var file = new FileStream($"{person.rid}.json", FileMode.Create, FileAccess.Write);
             //file.Close();
             return 1;
         }
-        static async Task LoadPages()
+
+        private static async Task LoadPages()
         {
-            List<Task<UInt16>> tasks = new List<Task<UInt16>>();
+            List<Task<ushort>> tasks = new List<Task<ushort>>();
             while (true)
             {
-                while (_pagesWorking < pull_pages && (_completedPages + _pagesWorking) < pages)
+                while (_pagesWorking < PullPages && (_completedPages + _pagesWorking) < Pages)
                 {
-                    var task = loader.LoadFromWebAsync($"https://zen.yandex.ru/media/zen/channels?page={_currentPage}")
+                    var task = Loader.LoadFromWebAsync($"https://zen.yandex.ru/media/zen/channels?page={_currentPage}")
                         .ContinueWith((t) =>
                         {
                             ParsePage(t.Result);
-                            return (UInt16)2;
+                            return (ushort)2;
                         });
                     tasks.Add(task);
                     _currentPage++;
                     _pagesWorking++;
                 }
 
-                while (list_of_channels.Count > 0 && _channelsWorking < pull_channels)
+                while (ListOfChannels.Count > 0 && _channelsWorking < PullChannels)
                 {
-                    var task = LoadChannel(list_of_channels[0]);
-                    list_of_channels.RemoveAt(0);
+                    var task = LoadChannel(ListOfChannels.Pop());
                     tasks.Add(task);
                     _channelsWorking++;
-                    _currentChannel++;
                 }
 
                 try
@@ -102,7 +97,6 @@ namespace ConsoleApp1
                     switch (result)
                     {
                         case 1:
-                            _completedChannels++;
                             _channelsWorking--;
                             break;
                         case 2:
@@ -112,18 +106,24 @@ namespace ConsoleApp1
                     }
                     GC.Collect();
                 }
-                catch
+                catch (Exception e)
                 {
+                    //Console.WriteLine(e.Message);
+                    //Console.WriteLine(e.StackTrace);
                     break;
                 }
             }
         }
 
-        static async Task Main(string[] args)
+        static async Task StartParsing()
         {
-            Console.WriteLine("Старт начинаем! {0}", start);
+            Console.WriteLine("Старт начинаем! {0}", Start);
             await LoadPages();
-            Console.WriteLine("При {0} страницах было получено {1} каналов {2}", pages, _totalChannels, DateTime.Now - start);
+            Console.WriteLine("При {0} страницах было получено {1} каналов {2}", Pages, _totalChannels, DateTime.Now - Start);
+        }
+        public static async Task Main()
+        {
+            await StartParsing();
         }
     }
 }

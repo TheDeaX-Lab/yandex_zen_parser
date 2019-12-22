@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e11aeed8-fe74-498f-a679-ffa08966b2ee" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApp1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/ConsoleApp1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/ConsoleApp1.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConsoleApp1/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Person.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleApp1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Release/netcoreapp3.1/ConsoleApp1.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Release/netcoreapp3.1/ConsoleApp1.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Release/netcoreapp3.1/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Release/netcoreapp3.1/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/bin/Release/netcoreapp3.1/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/bin/Release/netcoreapp3.1/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/ConsoleApp1.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/Release/netcoreapp3.1/ConsoleApp1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConsoleApp1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleApp1/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +107,8 @@
       <workItem from="1576948117271" duration="2214000" />
       <workItem from="1576950620546" duration="481000" />
       <workItem from="1576955754775" duration="2354000" />
-      <workItem from="1577031566013" duration="6538000" />
+      <workItem from="1577031566013" duration="6745000" />
+      <workItem from="1577040522959" duration="1307000" />
     </task>
     <servers />
   </component>
@@ -106,22 +118,26 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="WindowStateProjectService">
-    <state width="1870" height="165" key="GridCell.Tab.0.bottom" timestamp="1577037896913">
+    <state x="960" y="0" width="960" height="1061" key="DiffContextDialog" timestamp="1577041398170">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1870" height="165" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577037896913" />
-    <state width="1870" height="165" key="GridCell.Tab.0.center" timestamp="1577037896912">
+    <state x="960" y="0" width="960" height="1061" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577041398170" />
+    <state width="1870" height="165" key="GridCell.Tab.0.bottom" timestamp="1577041850197">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1870" height="165" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577037896912" />
-    <state width="1870" height="165" key="GridCell.Tab.0.left" timestamp="1577037896912">
+    <state width="1870" height="165" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1577041850197" />
+    <state width="1870" height="165" key="GridCell.Tab.0.center" timestamp="1577041850196">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1870" height="165" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577037896912" />
-    <state width="1870" height="165" key="GridCell.Tab.0.right" timestamp="1577037896913">
+    <state width="1870" height="165" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1577041850196" />
+    <state width="1870" height="165" key="GridCell.Tab.0.left" timestamp="1577041850196">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1870" height="165" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577037896913" />
+    <state width="1870" height="165" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1577041850196" />
+    <state width="1870" height="165" key="GridCell.Tab.0.right" timestamp="1577041850196">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1870" height="165" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1577041850196" />
     <state x="553" y="247" width="804" height="520" key="Rider.ProjectTemplateDialog.Size" timestamp="1576920573120">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
